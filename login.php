@@ -6,7 +6,7 @@ $db = dbconnect($hostname, $db_name, $db_user, $db_passwd);
 session_start();
 
 // put full path to Smarty.class.php
-require('/usr/share/php/smarty-4.3.4/libs/Smarty.class.php');
+require_once('/usr/share/php/smarty-4.3.4/libs/Smarty.class.php');
 $smarty = new Smarty();
 
 $smarty->template_dir = 'templates';

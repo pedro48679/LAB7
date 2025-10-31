@@ -6,7 +6,7 @@ include_once 'Posts2_model.php';
 $db = dbconnect($hostname, $db_name, $db_user, $db_passwd);
 session_start();
 
-require('/usr/share/php/smarty-4.3.4/libs/Smarty.class.php');
+require_once('/usr/share/php/smarty-4.3.4/libs/Smarty.class.php');
 $smarty = new Smarty();
 
 $smarty->setTemplateDir(__DIR__ . '/templates');
